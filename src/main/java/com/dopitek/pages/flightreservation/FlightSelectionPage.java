@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class FlightSelection extends AbstractPage {
+public class FlightSelectionPage extends AbstractPage {
 
     @FindBy(name = "departure-flight")
     private List<WebElement> departureFlightsOptions;
@@ -19,7 +19,7 @@ public class FlightSelection extends AbstractPage {
     @FindBy(id = "confirm-flights")
     private WebElement confirmFlightsButton;
 
-    public FlightSelection(WebDriver driver) {
+    public FlightSelectionPage(WebDriver driver) {
         super(driver);
     }
 
